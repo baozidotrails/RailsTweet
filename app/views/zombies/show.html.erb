@@ -1,0 +1,5 @@
+<h1><%= @zombie.name %>'s Page</h1>
+<h2>Its tweets</h2>
+<% @zombie.tweets.each do |tweets| %>
+  <br><%= tweets.status %>
+<% end %>

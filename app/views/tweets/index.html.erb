@@ -1,0 +1,33 @@
+<!--
+<% if @tweets.empty? %>
+  <em>No tweets found!</em>
+<% else %>
+  <table border="1" width="400px">
+    <tr>
+      <th>#</th>
+      <th>Status</th>
+      <th>Zombie</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+
+    <% @tweets.each do |tweet| %>
+      <tr>
+        <td><%= tweet.id %></td>
+        <td><%= tweet.status %></td>
+        <td><%= link_to tweet.zombie.name, tweet.zombie %></td>
+        <td><%= link_to 'Show', tweet, confirm: "確定前往？" %></td>
+        <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
+        <td><%= link_to 'Delete', tweet, method: :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+
+
+
+<br>
+
+<%= link_to 'New tweet', new_tweet_path %> -->
+
